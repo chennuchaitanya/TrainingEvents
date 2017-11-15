@@ -1,0 +1,17 @@
+<h2> Your list of upcoming events:</h2>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let event of events">
+    <div class="media" >
+      <a [routerLink]="['/training-events',event.id]">
+        <div class="media-left">
+          <img class="image media-object" src="{{event.imageUrl}}">
+        </div>
+        <div class="media-body">
+          <h4>{{event.title}}</h4>
+          <h4>{{event.dateTime}}</h4>
+          <h4>{{event.location}}</h4>
+        </div>
+      </a>
+    </div>
+  </li>
+</ul>

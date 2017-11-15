@@ -1,0 +1,8 @@
+
+<h2>Course Information</h2>
+<div class="form-group" *ngFor="let event of events">
+  <h4>Title: {{event?.title}}</h4>
+  <h4>DateTime: {{event?.dateTime}}</h4>
+  <h4>Available Seats:{{event?.availableSeats}}</h4>
+  <h4>City: {{event?.location}}</h4>
+</div> 
